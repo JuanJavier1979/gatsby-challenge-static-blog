@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -17,9 +17,9 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="font-serif min-h-screen text-gray-900">
+    <div className="flex flex-col min-h-screen text-gray-900">
       <Header siteTitle={site.siteMetadata.title} />
-      <main>{children}</main>
+      <main className="flex flex-1 flex-col">{children}</main>
       <Footer />
     </div>
   )

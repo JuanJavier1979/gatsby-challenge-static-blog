@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Challenge - Static Blog',
+    title: 'JuanJavier.Blog',
     author: '@JuanJavier1979'
   },
   plugins: [
@@ -19,6 +19,13 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/blog/`
+      }
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -29,24 +36,5 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-          fonts: [
-              {
-                  family: `Noto+Serif`,
-                  variants: [`400`, `400i`, `700`]
-              },
-              {
-                  family: `Amiri`,
-                  variants: [`400`, `700`]
-              },
-              {
-                  family: `Lato`,
-                  variants: [`400`, `700`]
-              }
-          ],
-      },
-  },
   ]
 }
