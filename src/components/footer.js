@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="container mx-auto p-6">
       © {new Date().getFullYear()}, Built with
       {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
     </div>
   </footer>
 )
