@@ -30,7 +30,7 @@ class IndexPage extends React.Component {
               <article key={node.fields.slug} className="mb-16">
                 <header>
                   <small>{node.frontmatter.date}</small>
-                  <h3 className="text-2xl font-black mb-2">{title}</h3>
+                  <h3 className="text-2xl font-serif font-black mb-2">{title}</h3>
                 </header>
                 <section>
                   <p className="mb-4" dangerouslySetInnerHTML={{
