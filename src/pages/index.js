@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
         <section className="container mx-auto p-6 flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-1/2 justify-center items-start md:text-left pr-8">
             <p className="font-bold text-2xl leading-none">Welcome</p>
-            <h2 className="font-serif font-bold text-10xl leading-none">2020</h2>
+            <h2 className="font-serif font-bold text-6xl sm:text-8xl md:text-9xl xl:text-10xl leading-none">2020</h2>
             <p className="mt-6">This is the first version of my blog. <br />I am starting the year with a development challenge. In the first posts I will be writing about the process.<br />Let's start the year with some Gatsby coding!</p>
           </div>
           <div className="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left">
