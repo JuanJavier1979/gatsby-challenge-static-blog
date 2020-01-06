@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'JuanJavier.Blog',
+    description: 'Home of Juan Javier thoughts.',
     author: '@JuanJavier1979'
   },
   plugins: [
@@ -36,5 +37,6 @@ module.exports = {
         ]
       }
     },
+    'gatsby-plugin-react-helmet',
   ]
 }
