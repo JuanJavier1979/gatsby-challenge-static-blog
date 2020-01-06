@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 import "../styles/global.css"
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
@@ -13,6 +14,7 @@ class IndexPage extends React.Component {
 
     return (
       <Layout>
+        <SEO title="Home" />
         <section className="container mx-auto p-6 flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-1/2 justify-center items-start md:text-left pr-8">
             <p className="font-bold text-2xl leading-none">Welcome</p>
@@ -30,7 +32,7 @@ class IndexPage extends React.Component {
               <article key={node.fields.slug} className="mb-16">
                 <header>
                   <small>{node.frontmatter.date}</small>
-                  <h3 className="text-2xl font-black mb-2">{title}</h3>
+                  <h3 className="text-2xl font-serif font-black mb-2">{title}</h3>
                 </header>
                 <section>
                   <p className="mb-4" dangerouslySetInnerHTML={{

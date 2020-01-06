@@ -2,17 +2,21 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 class BlogSingle extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     return (
       <Layout>
-        <section className="container mx-auto p-6 flex flex-wrap flex-col md:flex-row items-center">
-          <h1>
+        <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
+        <header className="container mx-auto p-6 blog-single-header">
+          <h1 className="text-4xl font-bold font-serif">
             {post.frontmatter.title}
           </h1>
-        </section>
+          <small className="date">{post.frontmatter.date}</small>
+        </header>
+        <section className="container mx-auto p-6 blog-single" dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
     )
   }

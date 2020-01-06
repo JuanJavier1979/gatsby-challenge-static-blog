@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section.blog-single-header h1 {
+  @apply block;
+  @apply text-3xl;
+}
+section.blog-single h3 {
+  @apply text-xl;
+  @apply font-bold;
+}
+section.blog-single p {
+  @apply mb-4;
+  @apply text-lg;
+}
+section.blog-single a {
+  @apply text-blue-600;
+}
+section.blog-single ul {
+  @apply mb-4;
+  @apply list-disc;
+  @apply list-inside;
+}
+section.blog-single ul li {
+  @apply text-lg;
+}
