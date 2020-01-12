@@ -33,7 +33,14 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-relative-images'
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: "language-",
+              showLineNumbers: false,
+            }
+          }
         ]
       }
     },

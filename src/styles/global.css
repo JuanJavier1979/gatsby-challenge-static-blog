@@ -22,6 +22,15 @@ section.blog-single ul {
   @apply list-disc;
   @apply list-inside;
 }
-section.blog-single ul li {
+section.blog-single ol {
+  @apply mb-4;
+  @apply list-decimal;
+  @apply list-inside;
+}
+section.blog-single ul li,
+section.blog-single ol li {
   @apply text-lg;
+}
+section.blog-single .gatsby-highlight {
+  @apply mb-12;
 }
