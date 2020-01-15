@@ -1,7 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import AuthorCard from "../components/author-card"
 import SEO from "../components/seo"
 
 class BlogSingle extends React.Component {
@@ -17,6 +18,7 @@ class BlogSingle extends React.Component {
           <small className="date">{post.frontmatter.date}</small>
         </header>
         <section className="container mx-auto p-6 blog-single" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <AuthorCard date={post.frontmatter.date} />
       </Layout>
     )
   }
