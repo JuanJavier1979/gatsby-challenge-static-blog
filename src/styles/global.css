@@ -34,3 +34,7 @@ section.blog-single ol li {
 section.blog-single .gatsby-highlight {
   @apply mb-12;
 }
+
+section.author-card a {
+  @apply text-blue-600;
+}
