@@ -2,6 +2,7 @@
 title: Hello World
 date: "2020-01-06T10:00:00"
 description: "First post of my new blog. You can find info about why and how I am doing this project."
+path: '/hello-world'
 ---
 
 Hello all!  
