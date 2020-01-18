@@ -2,6 +2,7 @@
 title: Summary of first week
 date: "2020-01-07T10:00:00"
 description: "What I did on my first week doing the Gatsby Challenge."
+path: '/gatsby-challenge-first-week-summary'
 ---
 
 So I completed the first challenge of [100 Days Of Gatsby Challenge](https://www.gatsbyjs.org/blog/100days/). I already started learning Gatsby some months ago and completed some tutorials. I even changed my old personal WordPress site to Gatsby as a test project.

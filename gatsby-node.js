@@ -18,6 +18,19 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug
               }
               frontmatter {
+                path
+                title
+              }
+            }
+            next {
+              frontmatter {
+                path
+                title
+              }
+            }
+            previous {
+              frontmatter {
+                path
                 title
               }
             }

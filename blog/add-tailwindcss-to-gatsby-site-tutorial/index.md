@@ -2,6 +2,7 @@
 title: How to add TailwindCSS to a new brand Gatsby site
 date: "2020-01-12T16:40:00"
 description: "Steps to integrate TailwindCSS into a new brand Gatsby site."
+path: '/add-tailwindcss-to-gatsby-site-tutorial'
 ---
 
 This tutorial requires that you have Gatsby installed on your computer. If not please read this doc [Set Up Your Development Environment](https://www.gatsbyjs.org/tutorial/part-zero/).
