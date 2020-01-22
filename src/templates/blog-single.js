@@ -11,7 +11,7 @@ const BlogSingle = ({ data, pageContext }) => {
   const post = data.mdx
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
+      <SEO title={post.frontmatter.title} description={post.frontmatter.description} bodyclass={post.frontmatter.path.replace('/','')} />
       <header className="container mx-auto p-6 blog-single-header">
         <h1 className="text-4xl font-bold font-serif">
           {post.frontmatter.title}
@@ -38,7 +38,8 @@ query BlogPostBySlug($slug: String!) {
     frontmatter {
       title
       date(formatString: "MMMM DD, YYYY")
-      description
+	  description
+	  path
     }
   }
 }
