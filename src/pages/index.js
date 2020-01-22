@@ -10,7 +10,7 @@ import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const posts = data.allMarkdownRemark.edges
+    const posts = data.allMdx.edges
 
     return (
       <Layout>
@@ -53,7 +53,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
 query {
-  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
     edges {
       node {
         excerpt
