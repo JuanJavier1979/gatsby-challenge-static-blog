@@ -59,5 +59,18 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: "JuanJavier.Blog",
+        short_name: "JJ.Blog",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#6b37bf",
+        display: "standalone",
+        icon: "static/logo-icon.png",
+      }
+    },
+    'gatsby-plugin-offline',
   ]
 }
