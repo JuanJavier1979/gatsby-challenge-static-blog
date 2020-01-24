@@ -31,3 +31,22 @@ section.blog-single .gatsby-highlight {
 section.author-card a {
   @apply text-blue-600;
 }
+
+body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p {
+  @apply flex flex-wrap;
+}
+
+body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p span {
+  flex: 1 1 100%;
+  margin: 0.5rem!important;
+}
+@media (min-width: 641px) {
+  body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p span {
+    flex: 1 1 47%;
+  }
+}
+@media (min-width: 1025px) {
+  body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p span {
+    flex: 1 1 20%;
+  }
+}
