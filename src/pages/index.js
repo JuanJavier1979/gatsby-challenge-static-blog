@@ -25,14 +25,14 @@ class IndexPage extends React.Component {
             <img alt="Cat and human sitting on a couch" className="block mx-auto" src={catAndHumanIllustration} />
           </div>
           </section>
-        <section className="container mx-auto p-6">
+        <section className="container posts-container">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <article key={node.fields.slug} className="mb-16">
+              <article key={node.fields.slug}>
                 <header>
                   <small>{node.frontmatter.date}</small>
-                  <h3 className="text-2xl font-serif font-black mb-2">{title}</h3>
+                  <h3>{title}</h3>
                 </header>
                 <section>
                   <p className="mb-4" dangerouslySetInnerHTML={{
