@@ -19,9 +19,9 @@ const PostNav = ({ pageContext }) => {
   ) : ''
   
   return (
-    <section className="container mx-auto p-6 flex post-nav">
-      <div className="w-1/2 p-3">{previousPost}</div>
-      <div className="w-1/2 p-3 border-l border-solid border-gray-300 text-right">{nextPost}</div>
+    <section className="container post-nav">
+      <div className="prev">{previousPost}</div>
+      <div className="next">{nextPost}</div>
     </section>
   )
 }
