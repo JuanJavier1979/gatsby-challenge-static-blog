@@ -2,49 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-header.site-header .container {
-  @apply mx-auto p-6 flex items-center;
-}
-header.site-header .container .logo {
-  @apply flex-1;
-}
-header.site-header .container nav {
-  @apply self-center font-bold text-xl leading-none;
-}
-
-div.main-layout {
-  @apply flex flex-col min-h-screen text-gray-900;
-}
-div.main-layout > main {
-  @apply flex flex-1 flex-col;
-}
-
-footer.site-footer {
-  @apply bg-gray-300;
-}
-footer.site-footer > div {
-  @apply mx-auto p-6;
-}
-
-section.posts-container {
-  @apply mx-auto p-6;
-}
-section.posts-container > article {
-  @apply mb-16;
-}
-section.posts-container > article h3 {
-  @apply text-2xl font-serif font-black mb-2;
-}
-
-header.blog-single-header {
-  @apply mx-auto p-6;
-}
-header.blog-single-header h1 {
-  @apply block text-4xl font-bold font-serif;
-}
-section.blog-single {
-  @apply mx-auto p-6;
-}
 section.blog-single h3 {
   @apply text-xl font-bold;
 }
@@ -68,33 +25,8 @@ section.blog-single .gatsby-highlight {
   @apply mb-12;
 }
 
-section.author-card {
-  @apply mx-auto p-6 border-t border-b border-solid border-gray-300;
-}
-section.author-card .author-wrapper {
-  @apply flex items-center;
-}
-section.author-card .author-text {
-  @apply text-base;
-}
-section.author-card .author-text .top {
-  @apply text-black leading-none;
-}
 section.author-card a {
   @apply text-blue-600;
-}
-section.author-card img {
-  @apply w-20 h-20 rounded-full mr-4;
-}
-
-section.post-nav {
-  @apply mx-auto p-6 flex;
-}
-section.post-nav .prev {
-  @apply w-1/2 p-3;
-}
-section.post-nav .next {
-  @apply w-1/2 p-3 border-l border-solid border-gray-300 text-right;
 }
 
 body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p {

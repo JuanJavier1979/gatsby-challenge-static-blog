@@ -6,14 +6,19 @@ import jjLogo from "../../static/logo.svg";
 
 const Header = ({ siteTitle }) => (
   <header className="site-header">
-    <div className="container">
-      <div className="logo">
+    <div className="container mx-auto p-6 flex items-center">
+      <div className="logo flex-1">
         <Link to="/" className="inline-block">
           <span className="font-bold text-xl tracking-tight">
             <img alt={siteTitle} src={jjLogo} />
           </span>
         </Link>
       </div>
+      <nav className="self-center font-bold text-xl leading-none">
+        <ul>
+          <li><Link to="/about/">about</Link></li>
+        </ul>
+      </nav>
     </div>
   </header>
 )

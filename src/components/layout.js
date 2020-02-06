@@ -17,9 +17,9 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="main-layout">
+    <div className="main-layout flex flex-col min-h-screen text-gray-900">
       <Header siteTitle={site.siteMetadata.title} />
-      <main>{children}</main>
+      <main className="flex flex-1 flex-col">{children}</main>
       <Footer />
     </div>
   )
