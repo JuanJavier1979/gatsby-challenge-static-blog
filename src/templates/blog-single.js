@@ -12,13 +12,13 @@ const BlogSingle = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} description={post.frontmatter.description} bodyclass={post.frontmatter.path.replace('/','')} />
-      <header className="container blog-single-header">
-        <h1>
+      <header className="container mx-auto p-6 blog-single-header">
+        <h1 className="block text-4xl font-bold font-serif;">
           {post.frontmatter.title}
         </h1>
         <small className="date">{post.frontmatter.date}</small>
       </header>
-      <section className="container blog-single">
+      <section className="container mx-auto p-6 blog-single">
         <MDXRenderer>{post.body}</MDXRenderer>
       </section>
       <AuthorCard date={post.frontmatter.date} />
