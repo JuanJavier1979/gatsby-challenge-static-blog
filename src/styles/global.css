@@ -9,7 +9,7 @@ section.blog-single p {
   @apply mb-4 text-lg;
 }
 section.blog-single a {
-  @apply text-blue-600;
+  color:#2B73B6;
 }
 section.blog-single ul {
   @apply mb-4 list-disc list-inside;

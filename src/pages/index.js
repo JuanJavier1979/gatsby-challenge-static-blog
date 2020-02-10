@@ -17,8 +17,7 @@ class IndexPage extends React.Component {
         <SEO title="Home" />
         <section className="container mx-auto p-6 flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-1/2 justify-center items-start md:text-left pr-8">
-            <p className="font-bold text-2xl leading-none">Welcome</p>
-            <h2 className="font-serif font-bold text-6xl sm:text-8xl md:text-9xl xl:text-10xl leading-none">2020</h2>
+            <h1 className="font-serif font-bold text-4xl sm:text-5xl md:text-5xl xl:text-6xl leading-none">Welcome<br />to Juan Javier's Blog</h1>
             <p className="mt-6">This is the first version of my blog. <br />I am starting the year with a development challenge. In the first posts I will be writing about the process.<br />Let's start the year with some Gatsby coding!</p>
           </div>
           <div className="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left">
@@ -26,6 +25,7 @@ class IndexPage extends React.Component {
           </div>
           </section>
         <section className="container mx-auto p-6 posts-container">
+          <h2 className="text-3xl font-serif font-black mb-2">Read all posts</h2>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
                   <p className="mb-4" dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
                   }} />
-                  <Link className="text-blue-600 shadow-none" to={node.fields.slug}>Read more</Link>
+                  <Link className="text-blue-600 shadow-none" to={node.fields.slug} aria-label={`Read the post ${title}`}>Read more</Link>
                 </section>
               </article>
             )
