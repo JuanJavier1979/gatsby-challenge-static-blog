@@ -8,9 +8,24 @@ section.blog-single h3 {
 section.blog-single p {
   @apply mb-4 text-lg;
 }
-section.blog-single a {
-  color:#2B73B6;
+section.blog-single a,
+.read-more-link {
+  color: #fff;
+  background: linear-gradient(120deg, #0072ff 40%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  text-decoration: underline;
+  text-decoration-color: #0072ff;
+  transition: all .5s ease;
 }
+section.blog-single a:hover,
+section.blog-single a:focus,
+.read-more-link:hover,
+.read-more-link:focus {
+  text-decoration: none;
+}
+
 section.blog-single ul {
   @apply mb-4 list-disc list-inside;
 }
@@ -26,7 +41,18 @@ section.blog-single .gatsby-highlight {
 }
 
 section.author-card a {
-  @apply text-blue-600;
+  color: #fff;
+  background: linear-gradient(120deg, #0072ff 40%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  text-decoration: underline;
+  text-decoration-color: #0072ff;
+  transition: all .5s ease;
+}
+section.author-card a:hover
+section.author-card a:focus {
+  text-decoration: none;
 }
 
 body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p {
