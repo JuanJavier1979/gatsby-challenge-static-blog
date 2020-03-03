@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
                   <p className="mb-4" dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
                   }} />
-                  <Link className="text-blue-600 shadow-none" to={node.fields.slug} aria-label={`Read the post ${title}`}>Read more</Link>
+                  <Link className="read-more-link" to={node.fields.slug} aria-label={`Read the post ${title}`}>Read more</Link>
                 </section>
               </article>
             )
