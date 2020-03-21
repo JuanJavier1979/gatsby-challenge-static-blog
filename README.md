@@ -1,7 +1,16 @@
-# gatsby-challenge-static-blog
+# Gatsby Challenge Static Blog
 
 ## Challenges
 
-* Create a Static Blog
-* Host Your Gatsby Site for Free
-* Auto-Optimize Images on Your Gatsby Site
+* [x] Create a Static Blog
+* [x] Host Your Gatsby Site for Free
+* [x] Auto-Optimize Images on Your Gatsby Site
+* [ ] Add Third-Party React Components
+* [x] Add React Components in Markdown
+* [ ] Use Serverless Functions and Services to Collect Form Data
+* [ ] Turn Your Gatsby Site into a Progressive Web App
+* [ ] Make Your Forms and Images Accessible to Everyone
+* [ ] Optimize Your Website for Search Engines
+* [ ] Keep Your Gatsby Site Blazing Fast
+* [ ] Source Data from a Headless CMS
+* [ ] Transform Your Gatsby Website into a Web App
