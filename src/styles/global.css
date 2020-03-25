@@ -9,6 +9,7 @@ section.blog-single p {
   @apply mb-4 text-lg;
 }
 section.blog-single a,
+body.about-page .about-page-content ul a,
 .read-more-link {
   color: #fff;
   background: linear-gradient(120deg, #0072ff 40%, #00d4ff 100%);
@@ -21,6 +22,8 @@ section.blog-single a,
 }
 section.blog-single a:hover,
 section.blog-single a:focus,
+body.about-page .about-page-content ul a:hover,
+body.about-page .about-page-content ul a:focus,
 .read-more-link:hover,
 .read-more-link:focus {
   text-decoration: none;
@@ -82,4 +85,15 @@ body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p span {
   .container {
     max-width: 1280px;
   }
+}
+
+body.about-page .about-page-content p,
+body.about-page .about-page-content ul {
+  @apply mb-4 text-lg;
+}
+body.about-page .about-page-content ul {
+  @apply list-disc list-inside;
+}
+body.about-page .about-page-content ul li {
+  @apply mb-2;
 }
