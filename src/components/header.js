@@ -14,6 +14,11 @@ const Header = ({ siteTitle }) => (
           </span>
         </Link>
       </div>
+      <nav className="self-center font-bold text-xl leading-none">
+        <ul>
+          <li><Link to="/about/">about</Link></li>
+        </ul>
+      </nav>
     </div>
   </header>
 )
