@@ -13,6 +13,14 @@ module.exports = {
         '8xl': '8rem',
         '9xl': '9rem',
         '10xl': '10rem',
+      },
+      colors: {
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        background: "var(--color-background)",
+        backgroundFooter: "var(--color-background-footer)",
+        heading: "var(--color-heading)",
+        body: "var(--color-body)",
       }
     }
   },
