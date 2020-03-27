@@ -8,9 +8,9 @@
 * [ ] Add Third-Party React Components
 * [x] Add React Components in Markdown
 * [ ] Use Serverless Functions and Services to Collect Form Data
-* [ ] Turn Your Gatsby Site into a Progressive Web App
+* [x] Turn Your Gatsby Site into a Progressive Web App
 * [ ] Make Your Forms and Images Accessible to Everyone
-* [ ] Optimize Your Website for Search Engines
+* [x] Optimize Your Website for Search Engines
 * [ ] Keep Your Gatsby Site Blazing Fast
 * [ ] Source Data from a Headless CMS
 * [ ] Transform Your Gatsby Website into a Web App
