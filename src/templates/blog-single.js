@@ -13,7 +13,7 @@ const BlogSingle = ({ data, pageContext }) => {
     <Layout>
       <SEO title={post.frontmatter.title} description={post.frontmatter.description} bodyclass={post.frontmatter.path.replace('/','')} />
       <header className="container mx-auto p-6 blog-single-header">
-        <h1 className="block text-4xl font-bold font-serif;">
+        <h1 className="block text-5xl font-bold font-serif">
           {post.frontmatter.title}
         </h1>
         <small className="date">{post.frontmatter.date}</small>

@@ -2,7 +2,7 @@ import React from "react"
 import JuanJavier from '../images/JuanJavier.jpeg'
 
 const AuthorCard = () => (
-  <section className="container mx-auto p-6 border-t border-b border-solid border-gray-300 author-card">
+  <section className="container mx-auto mt-16 py-12 px-6 border-t border-b border-solid border-gray-300 author-card">
     <div className="author-wrapper flex items-center">
       <img className="w-20 h-20 rounded-full mr-4" src={JuanJavier} alt="Avatar of Juan Javier" />
       <div className="author-text text-base">

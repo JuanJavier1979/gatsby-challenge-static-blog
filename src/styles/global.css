@@ -80,6 +80,9 @@ body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p span {
   .container {
     max-width: 1024px;
   }
+  main > section.container.blog-single {
+    max-width: 720px;
+  }
 }
 @media (min-width: 1281px) {
   .container {
@@ -103,8 +106,8 @@ body.about-page .about-page-content ul li {
   --color-secondary: theme("colors.gray.600");
   --color-body: theme("colors.gray.900");
   --color-heading: theme("colors.gray.900");
-  --color-background: theme("colors.gray.100");
-  --color-background-footer: theme("colors.gray.300");
+  --color-background: theme("colors.white");
+  --color-background-footer: theme("colors.white");
 }
 
 .theme-dark {
@@ -113,7 +116,7 @@ body.about-page .about-page-content ul li {
   --color-body: theme("colors.gray.300");
   --color-heading: theme("colors.gray.200");
   --color-background: theme("colors.gray.900");
-  --color-background-footer: theme("colors.black");
+  --color-background-footer: theme("colors.gray.900");
 }
 
 .content-transition {
