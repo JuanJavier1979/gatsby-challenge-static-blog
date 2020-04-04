@@ -15,3 +15,4 @@
 * [ ] Source Data from a Headless CMS
 * [ ] Transform Your Gatsby Website into a Web App
 * [ ] Enable Comments to Your Gatsby Blog
+* [ ] Rapidly Build Sites with Gatsby Themes
