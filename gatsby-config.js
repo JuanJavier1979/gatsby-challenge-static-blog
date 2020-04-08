@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 
 module.exports = {
   siteMetadata: {
@@ -48,6 +51,16 @@ module.exports = {
             }
           }
         ]
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-docs',
+      options: {
+        config: {
+          api_key: process.env.GDOC_API_KEY,
+          client_id: process.env.GDOC_CLIENT_ID,
+          client_secret: process.env.GDOC_CLIENT_SECRET,
+        },
       }
     },
     'gatsby-plugin-react-helmet',
