@@ -16,3 +16,4 @@
 * [ ] Transform Your Gatsby Website into a Web App
 * [ ] Enable Comments to Your Gatsby Blog
 * [ ] Rapidly Build Sites with Gatsby Themes
+* [ ] Publish Website Kits with Gatsby Themes
