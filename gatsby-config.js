@@ -50,6 +50,7 @@ module.exports = {
         ]
       }
     },
+    '@pauliescanlon/gatsby-mdx-embed',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
