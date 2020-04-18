@@ -10,23 +10,46 @@ section.blog-single p {
 }
 section.blog-single a,
 body.about-page .about-page-content ul a,
-.read-more-link {
-  color: #fff;
-  background: linear-gradient(120deg, #0072ff 40%, #00d4ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  text-decoration: underline;
-  text-decoration-color: #0072ff;
-  transition: all .5s ease;
+.read-more-link,
+section.author-card a {
+  text-decoration: none;
+  transition: all .15s ease;
+  position: relative;
+}
+section.blog-single a:after,
+body.about-page .about-page-content ul a:after,
+.read-more-link:after,
+section.author-card a:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background: #0072ff;
+  background: linear-gradient(120deg,#0072ff 40%,#00d4ff);
+  transition: all .25s ease;
 }
 section.blog-single a:hover,
 section.blog-single a:focus,
 body.about-page .about-page-content ul a:hover,
 body.about-page .about-page-content ul a:focus,
 .read-more-link:hover,
-.read-more-link:focus {
-  text-decoration: none;
+.read-more-link:focus,
+section.author-card a:hover,
+section.author-card a:focus {
+  color: #0072ff;
+}
+section.blog-single a:hover:after,
+section.blog-single a:focus:after,
+body.about-page .about-page-content ul a:hover:after,
+body.about-page .about-page-content ul a:focus:after,
+.read-more-link:hover:after,
+.read-more-link:focus:after,
+section.author-card a:hover:after,
+section.author-card a:focus:after {
+  height: 4px;
 }
 
 section.blog-single ul {
@@ -41,21 +64,6 @@ section.blog-single ol li {
 }
 section.blog-single .gatsby-highlight {
   @apply mb-12;
-}
-
-section.author-card a {
-  color: #fff;
-  background: linear-gradient(120deg, #0072ff 40%, #00d4ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  text-decoration: underline;
-  text-decoration-color: #0072ff;
-  transition: all .5s ease;
-}
-section.author-card a:hover
-section.author-card a:focus {
-  text-decoration: none;
 }
 
 body.featured-abstract-artworks-by-geordanna-cordero main .blog-single p {
@@ -132,6 +140,44 @@ body.about-page .about-page-content ul li {
 }
 .main-layout .main-logo {
   fill: var(--color-body);
+}
+.site-header ul a,
+.site-footer a,
+.post-nav a strong {
+  position: relative;
+}
+.site-header ul a:hover,
+.site-header ul a:focus,
+.site-footer a:hover,
+.site-footer a:focus,
+.post-nav a:hover strong,
+.post-nav a:focus strong {
+  color:#0072ff;
+}
+.site-header ul a:after,
+.site-footer a:after,
+.post-nav a strong:after {
+  transform: translateY(-150%);
+  opacity: 0;
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transition: transform .15s ease-in-out,opacity .15s ease-in-out;
+  background: #0072ff;
+  background: linear-gradient(120deg,#0072ff 40%,#00d4ff);
+  content: "";
+}
+.site-header a:hover:after,
+.site-header a:focus:after,
+.site-footer a:hover:after,
+.site-footer a:focus:after,
+.post-nav a:hover strong:after,
+.post-nav afocus strong:after {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .hero-area p {
