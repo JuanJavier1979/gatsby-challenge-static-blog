@@ -8,7 +8,16 @@ section.blog-single h3 {
 section.blog-single p {
   @apply mb-4 text-lg;
 }
-section.blog-single a,
+section.blog-single a {
+  color: #0072ff;
+  text-decoration: underline;
+  text-decoration-color: #0072ff;
+  transition: all .5s ease;
+}
+section.blog-single a:hover,
+section.blog-single a:focus {
+  text-decoration: none;
+}
 body.about-page .about-page-content ul a,
 .read-more-link,
 section.author-card a {
@@ -16,7 +25,6 @@ section.author-card a {
   transition: all .15s ease;
   position: relative;
 }
-section.blog-single a:after,
 body.about-page .about-page-content ul a:after,
 .read-more-link:after,
 section.author-card a:after {
@@ -31,8 +39,6 @@ section.author-card a:after {
   background: linear-gradient(120deg,#0072ff 40%,#00d4ff);
   transition: all .25s ease;
 }
-section.blog-single a:hover,
-section.blog-single a:focus,
 body.about-page .about-page-content ul a:hover,
 body.about-page .about-page-content ul a:focus,
 .read-more-link:hover,
@@ -41,8 +47,6 @@ section.author-card a:hover,
 section.author-card a:focus {
   color: #0072ff;
 }
-section.blog-single a:hover:after,
-section.blog-single a:focus:after,
 body.about-page .about-page-content ul a:hover:after,
 body.about-page .about-page-content ul a:focus:after,
 .read-more-link:hover:after,
